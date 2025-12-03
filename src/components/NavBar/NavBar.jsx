@@ -1,11 +1,12 @@
 import React from 'react';
 import './nav-bar.css';
+import archieveLogo from '../../assets/archie-logo.png';
 
 function NavBar() {
     return (
         <nav className='navbar'>
             <div className='myname'>
-                <img src="src\assets\archie-logo.png" alt="logo" />
+                <img src={archieveLogo} alt="logo" />
             </div>
 
             <div className='navigation'>
