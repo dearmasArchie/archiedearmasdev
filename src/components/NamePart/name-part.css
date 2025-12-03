@@ -1,0 +1,34 @@
+.left-side{
+  float: none;
+  width: 50%;
+  padding: 20px;
+  /* background-color: aquamarine; */
+  font-family: zen-dots, sans-serif;
+  padding: 50px;
+  padding-top: 200px ;
+  color: #000;
+}
+
+.left-side .name{
+  font-size: 55px;
+  font-weight: bold;
+}
+.right-side{
+  float: none;
+  width: 50%;
+  padding: 20px;
+  /* background-color: lawngreen; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-side img{
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid #000;
+  border-bottom:12px solid #000;
+  border-right:12px solid #000;
+  
+}
