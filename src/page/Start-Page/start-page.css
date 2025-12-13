@@ -1,0 +1,149 @@
+/* Make sure overlay content is centered and readable */
+.bg-overlay {
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Page root container */
+.startpage-root {
+    height: 100vh;
+    width: 100%;
+    display: block;
+}
+
+/* Overlay card that holds content */
+.overlay-card {
+    max-width: 880px;
+    width: 100%;
+    background: rgba(6, 6, 6, 0.45);
+    backdrop-filter: blur(6px) saturate(120%);
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.title {
+    font-size: clamp(2rem, 6vw, 3.6rem);
+    margin: 0 0 0.4rem 0;
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+.subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin: 0 0 1rem 0;
+    color: #e6e6e6;
+}
+
+
+/* Optional grid utilities (kept for compatibility) */
+.parent {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.name-div {
+    grid-area: 1 / 2 / 2 / 10;
+    /* background-color: tomato;  */
+    height: 100%;
+    
+}
+.img-div { 
+    height: 100%;
+    grid-area: 2 / 2 / 6 / 5;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link-div { 
+    height: 100%;
+    grid-area: 2 / 5 / 6 / 10;
+    /* background-color: lightgreen; */
+    background-color: rgba(148, 148, 148, 0.2);
+    border-radius: 100px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    text-decoration: none;
+}
+
+.socials, .esports, .general{
+    height: 100%;
+    width: 100%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.startpage-root .socials a, .startpage-root .esports a, .startpage-root .general a {
+    text-decoration: none;
+    display: inline-block;
+    transition: color 160ms ease, transform 120ms ease;
+}
+.startpage-root .socials a:hover, .startpage-root .esports a:hover, .startpage-root .general a:hover {
+    color: #fff;
+    transform: translateX(6px);
+    cursor: pointer;
+}
+
+.startpage-root h1 a, .title a {
+    color: inherit;
+    text-decoration: none;
+}
+.startpage-root h1 a:hover, .title a:hover, .startpage-root h1 a:focus, .title a:focus {
+    color: inherit;
+    text-decoration: none;
+    transform: none;
+    outline: none;
+}
+
+
+
+@media (max-width: 600px) {
+    .overlay-card { padding: 1.25rem; border-radius: 8px; }
+    .title { font-size: 2rem; }
+}
+
+
+img {
+    display: block;
+    max-width: 70%;
+    min-width: 250px;
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    height: auto;
+    border-radius: 30px;
+    box-shadow:
+        inset 0 12px 30px rgba(0,0,0,0.6),
+        inset 0 -8px 24px rgba(0,0,0,0.35),
+        0 6px 18px rgba(0,0,0,0.35);
+}
+
+
+.startpage-root a {
+    text-decoration: none;
+    color: inherit;
+}
+.startpage-root a:hover,
+.startpage-root a:active {
+    text-decoration: none;
+}

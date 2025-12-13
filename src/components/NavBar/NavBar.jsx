@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './nav-bar.css';
 import archieveLogo from '../../assets/archie-logo.png';
+import { NavLink } from 'react-router';
 
 function NavBar() {
     const [open, setOpen] = useState(false);
@@ -27,10 +28,8 @@ function NavBar() {
             </button>
 
             <div className={`navigation ${open ? 'open' : ''}`}>
-                <a href="#home" onClick={close}>Home</a>
-                <a href="#about" onClick={close}>About</a>
-                <a href="#projects" onClick={close}>Projects</a>
-                <a href="#contact" onClick={close}>Contact</a>
+                <NavLink to ="/">Home</NavLink>
+                {/* <NavLink to ="/StartPage">Start Page</NavLink> */}
             </div>
 
             <div className={`buttons ${open ? 'open' : ''}`}>
