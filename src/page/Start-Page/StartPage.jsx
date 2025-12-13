@@ -14,7 +14,7 @@ function StartPage() {
           </div>
           <div className="img-div"> 
             {/* <img src={ChoiJisu} alt=""/>  */}
-            <img src="https://i.pinimg.com/736x/27/75/12/2775124b4c0d510a86abb626610f224b.jpg" alt=""/> 
+            <img src="https://i.pinimg.com/736x/27/75/12/2775124b4c0d510a86abb626610f224b.jpg" alt="" className='display-img'/> 
           </div>
           <div className="link-div"> 
             <div className='socials'>
